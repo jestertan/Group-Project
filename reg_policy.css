@@ -1,2 +1,64 @@
-body {
+/*all form input set at 20 characters in html file*/
+/*wrapper placeholder*/
+.wrapper{}
+
+/*set fixed header*/
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100px;
+  background-color:black;
+  width:100%;
+  color:white;
+  text-align:center;
+  line-height:100%;
+  }
+
+/*set header link decoration*/
+header a{
+  text-decoration:none;
+  color:white;
 }
+
+/*add header hover difference*/
+header a:hover{
+  color:yellow;
+}
+
+/*box margin top to header and flex display*/
+.wrapper .container{
+  width:50%;
+  display:flex;
+  margin-top:300px;
+}
+
+/*center and minimum size second box*/
+body .wrapper .container{
+ margin-left:auto;
+ margin-right:auto;
+ min-height:300px;  
+}
+
+
+/*style policy box inside container*/
+.wrapper .container aside{
+  color:white;
+  margin-right:10px;
+  border:8px solid gray;
+  flex:1;
+  background-color:black;
+  text-align:center;
+}
+
+/*style form box inside container*/
+.wrapper .container .form{
+  color:white;
+  margin-right:10px;
+  margin-left:10px;
+  border:8px solid gray;
+  flex:1;
+  background-color:black;
+  text-align:center;
+  }
+
