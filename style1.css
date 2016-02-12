@@ -1,0 +1,132 @@
+﻿body {
+    width: 900px;
+}
+
+#left-wrapper{
+		width:200px;
+		float:left;		/*Change the position of navigation to left side*/
+}
+
+.nav{
+	width:130%;
+	height: 500px;
+	position:relative;
+	background: black;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.navbtm{
+	margin-left:8px;
+	height:7px;
+	width:auto;
+	
+}
+
+#right-wrapper{
+		width:690px;
+		float:right;		/*Change the position of content to right side*/
+		margin:5px;
+}
+
+.content{
+	background-color: gray;
+	width:145%;
+	height: 500px;
+	padding-left:20px;
+	position:relative;
+	border-left: thin black solid;
+    text-color: black;
+    margin-top: 11px;
+}
+.Box {
+    position: relative;
+    padding: 2px; 
+    display: table;
+    margin-right: 10px;
+}
+.Row{
+    display: table-row;
+}
+img {
+    height: 164px;
+    width: 330px;
+    opacity: 1.0;
+}
+img:hover{
+    opacity: 0.4;
+}
+.Box1 {
+    height: 164px;
+    
+    display: table-cell;
+    width: 400px;
+}
+
+.Box2 {
+    height: 164px;
+    
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box3 {
+    height: 164px;
+    
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box4 {
+    height: 164px;
+    
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box5 {
+    height: 164px;
+   
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box6 {
+    height: 164px;
+   
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box7 {
+    height: 164px;
+
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box8 {
+    height: 164px;
+    
+    display: table-cell;
+    width: 400px; 
+}
+
+.Box9 {
+    height: 164px;
+   
+    display: table-cell;
+    width: 400px; 
+}
+
+#footer{
+	min-width:900px;
+	width:125%;
+	clear:both;
+	background-color: lightslategray;
+	text-align: left;
+	height:70px;
+	padding: 10px 50px 30px 50px;
+	margin:0px -30px -20px -30px;
+    margin-left: 5px;  
+}
