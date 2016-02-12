@@ -28,37 +28,40 @@ header a:hover{
 
 /*box margin top to header and flex display*/
 .wrapper .container{
-  width:50%;
-  display:flex;
-  margin-top:300px;
+  
 }
 
 /*center and minimum size second box*/
 body .wrapper .container{
  margin-left:auto;
  margin-right:auto;
- min-height:300px;  
+ min-height:400px; 
+ max-width:50%;
+ margin-top:250px;
+ min-width:300px;
+ 
 }
 
-
 /*style policy box inside container*/
-.wrapper .container aside{
+body .wrapper .container aside{
   color:white;
-  margin-right:10px;
-  border:8px solid gray;
-  flex:1;
+  float:left;
   background-color:black;
   text-align:center;
+  margin-bottom:30px;
+  padding:20px;
+  line-height:150%;
 }
 
 /*style form box inside container*/
-.wrapper .container .form{
+body .wrapper .container .form{
   color:white;
-  margin-right:10px;
-  margin-left:10px;
-  border:8px solid gray;
-  flex:1;
+  clear:left;
   background-color:black;
   text-align:center;
-  }
+  padding:10px;
+  
+  
+  
+}
 
