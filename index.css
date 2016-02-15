@@ -1,12 +1,13 @@
-*{
-    padding:  0px;
-    margin:  0px;
+html{
+    background-image:  url("pictures/bladeandsoul.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
     z-index: -2;
     position: fixed;
-    background-image: url("pictures/bladeandsoul.jpg");
     height: 100%;
     width: 100%;
     padding: 0pt;
@@ -28,7 +29,7 @@ header {
     opacity: 0.5;
 }
 #smenu{
-    padding-top: 300%;
+    padding-top: 100%;
 }
 
 #smenu li{
