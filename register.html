@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Registration and Policy</title>
+  <style>
+    /*all form input set at 20 characters in html file*/
+/*wrapper placeholder*/
+.wrapper{}
+
+/*set fixed header*/
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100px;
+  background-color:black;
+  width:100%;
+  color:white;
+  text-align:center;
+  line-height:100%;
+  }
+
+/*set header link decoration*/
+header a{
+  text-decoration:none;
+  color:white;
+}
+
+/*add header hover difference*/
+header a:hover{
+  color:gray;
+}
+
+/*box margin top to header and flex display*/
+.wrapper .container{
+  width:50%;
+  display:flex;
+  margin-top:200px;
+}
+
+/*center and minimum size second box*/
+body .wrapper .container{
+ margin-left:auto;
+ margin-right:auto;
+ min-height:300px;  
+}
+
+/*style form box inside container*/
+.wrapper .container .form{
+  color:black;
+  margin-right:10px;
+  margin-left:10px;
+  flex:1;
+  background-color:gray;
+  text-align:center;
+  padding-bottom:5px;  
+  }
+
+      </style>
+  </head>
+    <body>
+    <div class="wrapper">  
+      <header>
+          <h1>VGV Logo</h1>
+          <a href="">Home&nbsp&nbsp</a>
+          <a href="">Catalogue&nbsp&nbsp</a>
+          <a href="">About Us</a>
+      </header>
+      
+       <div class="container">
+      
+      <div class="form">
+        <h3>Registration</h3>
+        <br><br>
+        <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+          User Name:<br><br>
+          <input type="text" name="User Name" maxlength="20" size="30" required><br><br><br>
+          Password:<br><br>
+          <input type="password" name="Password"  maxlength="20" size="30" required><br><br>
+          Confirm Password:<br><br>
+          <input type="password" name="Password2"  maxlength="20" size="30" required><br><br>
+          Email Address:<br><br>
+          <input type="text" name="Email Address"  maxlength="20" size="30" required><br><br>
+          <input type="submit" value="Submit">
+        
+        </form>
+        
+         </div> 
+      
+      </div>
+      
+      </div>  
+          
+  </body>
+</html>
