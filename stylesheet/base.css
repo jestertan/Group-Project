@@ -25,6 +25,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+    background-image:  url("../pictures/bladeandsoul.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 body {
 	line-height: 1;
 }
@@ -52,6 +59,7 @@ p {
     font-family: "Times New Roman", Times, serif;
     font-size: 1.5em;
     text-align: left;
+    color: white;
 }
 
 h1{
