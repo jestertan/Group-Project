@@ -50,6 +50,17 @@ a{
 
 p {
     font-family: "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    text-align: left;
 }
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 32px;
+}
+
 
 
