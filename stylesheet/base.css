@@ -77,5 +77,11 @@ h3{
     text-align: center;
 }
 
+td{
+    padding: 1px;
+}
 
 
+#smenu{
+    padding-top: 100%;
+}
