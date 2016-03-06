@@ -26,7 +26,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html{
-    background-image:  url("../pictures/bladeandsoul.jpg");
+    /*left as comment since it had double slash //*/
+	background-image:  url("../pictures/bladeandsoul.jpg");
+    background-color: #808080;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
