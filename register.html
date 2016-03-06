@@ -6,6 +6,7 @@
         <title>Registration and Policy</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/base.css">
         <link rel="stylesheet" type="text/css" href="stylesheet/register.css">
+        <script src="scripts/vgvScript.js"></script>
   </head>
     <body>
     <div class="wrapper">  
@@ -24,7 +25,7 @@
         <br><br>
         <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
           User Name:<br><br>
-          <input type="text" name="User Name" maxlength="20" size="30" id="userName" required><br><br><br>
+          <input type="text" name="User Name" maxlength="20" size="30" id="userName" onchange="$('userName')" required><br><br><br>
           Password:<br><br>
           <input type="password" name="Password"  maxlength="20" size="30" id="password" required><br><br>
           Confirm Password:<br><br>
