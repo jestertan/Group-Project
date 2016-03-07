@@ -1,65 +1,52 @@
-﻿<!doctype html>
-<html lang="en">
+﻿<html>
 
 <head>
 <meta charset="utf-8">
-<title>Sample Content</title>
+<link rel="stylesheet" href="stylesheet/content.css">
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript">
-$(function() {
-    var nav = $('.nav');
-    var navTop = nav.offset().top;
-    $(window).scroll(function () {
-        var winTop = $(this).scrollTop();
-        if (winTop >= navTop) {
-            nav.addClass('fixed')
-        } else if (winTop <= navTop) {
-            nav.removeClass('fixed')
-        }
-    });
-});
-</script>
+<h2>VGV LOGO</h2><br>
+<a href="index.html">Home</a>  <a href="catalogue.html">Catalogue</a>  <a href="staffandpolicy.html">About Us</a>
 
-<link rel="stylesheet" type="text/css" href="stylesheet/base.css">
-<link rel="stylesheet" type="text/css" href="stylesheet/content.css">
 
 </head>
 
-<body>
+<body style="height: 44px">  
 
 
 
-<h1 style="color:white">VGV LOGO</h1>
-<div class="nav">
-    <ul class="clearfix">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
-        <li><a href="staffandpolicy.html">About us</a></li>
-    </ul>
-<!-- /#nav --></div>
-
-
+<!-- /#nav -->
+        <div class="wrapper">
+            <div class="inner-wrapper">
+                
 
 <div id="title">SAMPLE</div>
 
-<div id="contents">
+<div id="contents" style="width: 74%">
 
 <div id="main">
 
 	<div id="visual">
 
 		<div class="main_screen">
-			<img alt="top" width="100%" height="auto" src="pictures/content/ob_3cfec5_minecraft-title.png"></div>
-		<div class="sub_screen" style="width: 470px">
-			<img alt="sample" height="75%" src="pictures/content/minecraft-microsoft-founders.png" width="auto">
-			<img alt="sample" height="75%" src="pictures/content/121223ktminecraft10.jpg.png" width="auto">
-			<img alt="sample" height="75%" src="pictures/content/hades-temple-minecraft.jpg" width="auto"></div>
+			<img name="main" alt="top" height=290px src="pictures\content\ob_3cfec5_minecraft-title.png"></a></div>
+			
+		<div class="sub_screen" style="width: 510px; height: 95px;">
+		
+			<a href="javascript:document.main.src = 'pictures/content/ob_3cfec5_minecraft-title.png'; void(0);">
+			<img alt="" height="67px" src="pictures/content/ob_3cfec5_minecraft-title.png" width="auto" rel="nozoom" ></a>
+
+			<a href="javascript:document.main.src = 'pictures/content/minecraft-microsoft-founders.png'; void(0);">
+			<img alt="" height="67px" src="pictures/content/minecraft-microsoft-founders.png" width="auto" rel="nozoom" ></a>
+			
+			<a href="javascript:document.main.src = 'pictures/content/121223ktminecraft10.jpg.png'; void(0);">
+			<img alt="" height="67px" src="pictures/content/121223ktminecraft10.jpg.png" width="auto" rel="nozoom" ></a>
+			
+			<a href="javascript:document.main.src = 'pictures/content/hades-temple-minecraft.jpg'; void(0);">
+			<img alt="" height="67px" src="pictures/content/hades-temple-minecraft.jpg" width="auto" rel="nozoom" ></div></a>
 		
 	</div>
 
-		<div id="info">information information information information information information information information information information information information information information </div>
+		<div id="info" style="width: 190px; height: 409px;">information information information information information information information information information information information information information information </div>
 </div>	
 	
 
@@ -72,12 +59,24 @@ $(function() {
 		</div>
 		 
 		<div class="form"><p>Form</p>
-			<textarea name="TextArea1" style="width: 704px; height: 141px"></textarea><form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-				<br><input name="Submit1" type="submit" value="submit">&nbsp;&nbsp;
-				<input name="Reset1" type="reset" value="reset"></form>
 	</div>
-</div>
 
+
+	<form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
+	Name: <br>
+	<input type="text" name="personal_name" style="width: 250px"><br>
+	<br>
+	Email Address: <br>
+	<input type="text" name="email_address" cols="50" style="width: 360px"><br><br>
+
+	Comments: <br>
+	<textarea name="contents" rows="8" cols="70">
+
+	</textarea><br><br>
+	<input type="submit" name="btn1" value="Submit">
+	</form>
+
+	
 </body>
 
 </html>
