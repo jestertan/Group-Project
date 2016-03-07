@@ -1,4 +1,4 @@
-html{
+﻿html{
     background-image:  url("../pictures/bladeandsoul.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@ html{
 body{
 width:760px;
 margin: 20px auto; 
-background-color:#2B2B2B;
+
 word-break: break-all;
 }
 
@@ -29,7 +29,7 @@ div{
 	text-align:center;
     list-style: none;
     float: left;
-    background: #fffff;
+    background-color: #ffffff;
 
 }
 .nav li a {
@@ -62,7 +62,8 @@ box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
 
 #contents{
-width: 100%;
+margin-right: 41px; 
+width: 760px;
 background-color:#bfbfbf;
 margin:20px;
 padding: 5px;
@@ -70,7 +71,7 @@ box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
 
 #main{
-	width: 100%;
+	width: 760px;
 	height: 330px;
 }
 
@@ -91,8 +92,8 @@ box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
 
 .sub_screen{
-width: 500px;
-height: 110px;
+width: 490px; 
+height: 95px;
 background-color:#7f7f7f;
 text-align:center;
 padding:10px;
@@ -118,8 +119,8 @@ box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 .headline{
 width: 100%-20px;
 background-color:#7f7f7f;
-margin:10px;
-padding:10px;
+margin:10px 10px 20px 10px;
+padding:20px;
 height: 100px;
 clear:both;
 box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
@@ -127,10 +128,10 @@ box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 
 .form{
 width: 100%-20px;
+height: 36%;
 background-color:#7f7f7f;
 margin:10px;
 padding:10px;
-height: 35%;
 clear:both;
 box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
