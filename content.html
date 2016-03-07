@@ -4,11 +4,9 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="stylesheet/base.css">
 <link rel="stylesheet" type="text/css" href="stylesheet/content.css">
+<script src="scripts/vgvScript.js"></script>
 
 <style>
-
-
-
 .header{
   text-align: center;
   position:fixed;
@@ -24,9 +22,7 @@
 
   }
 
-
 </style>
-
 </head>
 
 <body>
@@ -37,7 +33,7 @@
 <!-- /#nav -->
                 
 <div class="header" style="height: 84px; left: 0; top: 0;"><br>
-<h2 class="auto-style1">VGV LOGO</h2>
+<h2>VGV LOGO</h2>
 <br>
 <a href="index.html"> Home </a>  
 <a href="catalogue.html"> Catalogue </a> 
@@ -57,7 +53,7 @@
 	<div id="visual">
 
 		<div class="main_screen" >
-			<img name="mainPic" alt="top" height=290px src="pictures\content\ob_3cfec5_minecraft-title.png"></div>
+			<img id="mainPic" alt="top" height=290px src="pictures\content\ob_3cfec5_minecraft-title.png"></div>
 			
 		<div class="sub_screen" style="">
 		
@@ -91,11 +87,12 @@
 		 
 		<div class="form" style=""><p>Form</p>
     <br>
+    <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 	Name: <br>
-	<input type="text" name="personal_name" style="width: 250px"><br>
+	<input type="text" id="personal_name" onchange="nameValid('personal_name')" name="forumName" style="width: 250px"><br>
 	<br>
 	Email Address: <br>
-	<input type="text" name="email_address" style="width: 360px"><br><br>
+	<input type="text" id="email_address" name="email_address" onchange="emailValid('email_address')" style="width: 360px"><br><br>
 
 	Comments: <br>
 	<textarea name="contents" rows="8" style="width: 360px">
@@ -103,7 +100,6 @@
 	</textarea><br><br>
 	<input type="submit" name="btn1" value="Submit">
 	</form>
-
 	</div>
 </div>
     	
