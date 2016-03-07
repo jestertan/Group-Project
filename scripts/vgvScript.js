@@ -36,3 +36,26 @@ function emailValid(id){
 	var email = $(id).value.search(/^(([a-zA-Z]|[0-9])|([-]|[_]|[.]))+[@](([a-zA-Z0-9])|([-])){2,63}[.](([a-zA-Z0-9]){2,63})+$/gi);
 	alert(email);
 }
+
+function rightClick(){
+	var message="You cannot do right click";
+	///////////////////////////////////
+	function clickIE() {
+		if (document.all) {alert(message);return false;}
+		}
+	function clickNS(e) {
+		if(document.layers||(document.getElementById&&!document.all)) {
+			if (e.which==2||e.which==3) {
+				alert(message);return false;}}
+				}
+		if (document.layers){
+			document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;
+		}else{
+			document.onmouseup=clickNS;document.oncontextmenu=clickIE;
+		}
+		
+		document.oncontextmenu=new Function("return false")
+// --> 
+}
+
+
