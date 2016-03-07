@@ -4,11 +4,9 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="stylesheet/base.css">
 <link rel="stylesheet" type="text/css" href="stylesheet/content.css">
+<script src="scripts/vgvScript.js"></script>
 
 <style>
-
-
-
 .header{
   text-align: center;
   position:fixed;
@@ -24,9 +22,7 @@
 
   }
 
-
 </style>
-
 </head>
 
 <body>
@@ -37,7 +33,7 @@
 <!-- /#nav -->
                 
 <div class="header" style="height: 84px; left: 0; top: 0;"><br>
-<h2 class="auto-style1">VGV LOGO</h2>
+<h2>VGV LOGO</h2>
 <br>
 <a href="index.html"> Home </a>  
 <a href="catalogue.html"> Catalogue </a> 
@@ -57,20 +53,24 @@
 	<div id="visual">
 
 		<div class="main_screen" >
+<<<<<<< HEAD
 			<img alt="top" height=290px src="pictures\content\ob_3cfec5_minecraft-title.png"></div>
+=======
+			<img id="mainPic" alt="top" height=290px src="pictures\content\ob_3cfec5_minecraft-title.png"></div>
+>>>>>>> f1953b65f40813d480201941984b40232ef44743
 			
 		<div class="sub_screen" style="">
 		
-			<a href="javascript:document.main.src = 'pictures/content/ob_3cfec5_minecraft-title.png'; void(0);">
+			<a href="javascript:document.mainPic.src = 'pictures/content/ob_3cfec5_minecraft-title.png'; void(0);">
 			<img alt="pic1" height="67px" src="pictures/content/ob_3cfec5_minecraft-title.png" width="auto" ></a>
 
-			<a href="javascript:document.main.src = 'pictures/content/minecraft-microsoft-founders.png'; void(0);">
+			<a href="javascript:document.mainPic.src = 'pictures/content/minecraft-microsoft-founders.png'; void(0);">
 			<img alt="pic2" height="67px" src="pictures/content/minecraft-microsoft-founders.png" width="auto"></a>
 			
-			<a href="javascript:document.main.src = 'pictures/content/121223ktminecraft10.jpg.png'; void(0);">
+			<a href="javascript:document.mainPic.src = 'pictures/content/121223ktminecraft10.jpg.png'; void(0);">
 			<img alt="pic3" height="67px" src="pictures/content/121223ktminecraft10.jpg.png" width="auto" ></a>
 			
-			<a href="javascript:document.main.src = 'pictures/content/hades-temple-minecraft.jpg'; void(0);">
+			<a href="javascript:document.mainPic.src = 'pictures/content/hades-temple-minecraft.jpg'; void(0);">
 			<img alt="pic4" height="67px" src="pictures/content/hades-temple-minecraft.jpg" width="auto"></a>
 
         </div>
@@ -91,11 +91,12 @@
 		 
 		<div class="form" style=""><p>Form</p>
     <br>
+    <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 	Name: <br>
-	<input type="text" name="personal_name" style="width: 250px"><br>
+	<input type="text" id="personal_name" onchange="nameValid('personal_name')" name="forumName" style="width: 250px"><br>
 	<br>
 	Email Address: <br>
-	<input type="text" name="email_address" style="width: 360px"><br><br>
+	<input type="text" id="email_address" name="email_address" onchange="emailValid('email_address')" style="width: 360px"><br><br>
 
 	Comments: <br>
 	<textarea name="contents" rows="8" style="width: 360px">
@@ -103,7 +104,6 @@
 	</textarea><br><br>
 	<input type="submit" name="btn1" value="Submit">
 	</form>
-
 	</div>
 </div>
     	

@@ -60,3 +60,13 @@ header {
 #smenu a:visited{
     color: white;
 }
+
+marquee {
+    margin-left: 20%;
+    /*margin-top: 252px;*/
+}
+
+marquee img {
+    width: 48%;
+    height: 300px;   
+}
