@@ -87,3 +87,12 @@ td{
 #smenu{
     padding-top: 100%;
 }
+
+.box{
+    color: #ffffff;
+}
+
+fieldset{
+    
+    background: #ff00ff;
+}
