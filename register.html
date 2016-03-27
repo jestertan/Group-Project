@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +13,16 @@
         <script src="scripts/vgvScript.js"></script>
   </head>
     <body onload="rightClick()">
+<?php
+	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		echo '<ul class="err">';
+		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			echo '<li>',$msg,'</li>'; 
+		}
+		echo '</ul>';
+		unset($_SESSION['ERRMSG_ARR']);
+	}
+?>
     <div class="wrapper">  
       <header>
           <h2>VGV Logo</h2>
@@ -20,23 +34,35 @@
       
        <div class="container">
       
-      <div class="form">
-        <h3>Registration</h3>
-        <br><br>
-        <form action="register.php" method="post">
-          User Name:<br><br>
-          <input type="text" name="User Name" maxlength="30" size="30" id="userName" onchange="nameValid('userName')" required><br><br><br>
-          Password:<br><br>
-          <input type="password" name="Password"  maxlength="30" size="30" id="password" onchange="passValid('password')" required><br><br>
-          Confirm Password:<br><br>
-          <input type="password" name="Password2"  maxlength="30" size="30" id="password2" onchange="passChecker('password', 'password2')"required><br><br>
-          Email Address:<br><br>
-          <input type="text" name="Email Address"  maxlength="100" size="30" id="email" onchange="emailValid('email')" required><br><br>
-          <input type="submit" value="Submit">
-        
-        </form>
-        
-         </div> 
+ <p>&nbsp;</p>
+<form id="registerForm" name="registerForm" method="post" action="forum/forum/register.php">
+  <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
+    <tr>
+      <th>First Name </th>
+      <td><input name="fname" type="text" class="textfield" id="fname" /></td>
+    </tr>
+    <tr>
+      <th>Last Name </th>
+      <td><input name="lname" type="text" class="textfield" id="lname" /></td>
+    </tr>
+    <tr>
+      <th width="124">Login</th>
+      <td width="168"><input name="login" type="text" class="textfield" id="login" /></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><input name="password" type="password" class="textfield" id="password" /></td>
+    </tr>
+    <tr>
+      <th>Confirm Password </th>
+      <td><input name="cpassword" type="password" class="textfield" id="cpassword" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="Submit" value="Register" /></td>
+    </tr>
+  </table>
+</form>
       
       </div>
       
