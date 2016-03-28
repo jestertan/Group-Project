@@ -5,7 +5,7 @@
 
 
 
-/*set fixed header*/
+/*set fixed header
 header{
   position:fixed;
   top:0;
@@ -16,18 +16,18 @@ header{
   color:white;
   text-align:center;
   line-height:100%;
-  }
+  }*/
 
-/*set header link decoration*/
+/*set header link decoration
 header a{
   text-decoration:none;
   color:white;
-}
+}*/
 
-/*add header hover difference*/
+/*add header hover difference
 header a:hover{
   color:gray;
-}
+}*/
 
 
 /*center and minimum size second box*/

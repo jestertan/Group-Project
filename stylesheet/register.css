@@ -2,29 +2,29 @@
 /*wrapper placeholder*/
 .wrapper{}
 
-/*set fixed header*/
+/*set fixed header
 header{
-  position:fixed;
-  top:0;
-  left:0;
+font-size: 100%;
   height:100px;
   background-color:black;
   width:100%;
   color:white;
   text-align:center;
   line-height:100%;
-  }
+  margin: 0px auto;
+  padding: 10px;
+  }*/
 
-/*set header link decoration*/
+/*set header link decoration
 header a{
   text-decoration:none;
   color:white;
-}
+}  */
 
-/*add header hover difference*/
+/*add header hover difference
 header a:hover{
   color:gray;
-}
+}*/
 
 /*box margin top to header and flex display*/
 .wrapper .container{

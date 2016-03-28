@@ -11,17 +11,14 @@
     bottom: 0;
     right: 0;
     left: 0;
-
     padding: 0;
-    margin: 0;
 }
 .inner-wrapper {
-    width: 1030px;
-    margin: 0px auto;
+    width: 100%;
     padding: 0;
     display: table;
-    position: relative;
-    clear: both;    
+    clear: both;
+    margin: 0px auto;
 }
 .nav  {
 	width: 300px;
@@ -33,12 +30,13 @@
     filter: alpha(opacity=40);
 }
 .content {
-    //width: 724px;
-    float: left;
+	width: 100%;
+
+    margin: 0 auto;
 }
 .foot {
     background: black;
-    width: 1024px;
+    width: 100%;
     margin: 0px auto;
     opacity: 0.5;
 }
@@ -68,4 +66,7 @@ img:hover{
 }
 .nav li a:hover {
     background: #666;
+}
+table{
+	margin: 0px auto;
 }
