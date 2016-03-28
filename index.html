@@ -32,12 +32,13 @@
 			$sql="SELECT * FROM $tbl_name ORDER BY id DESC";
 			$result=mysql_query($sql);
 			$count = min(5, mysql_num_rows($result));
-			if($count==0)
+			if($count==0) {
 				echo "<li>No topics</li>";
-			else
-				for($i=0; $i < $count; $i++){
-					$row=mysql_fetch_array($result);
-					echo '<li><a href="view_topic.php?id='.$row['id'].'">'.$row['topic'].'</a></li>';
+				} else {
+					for($i=0; $i < $count; $i++) {
+						$row=mysql_fetch_array($result);
+						echo '<li><a href="view_topic.php?id='.$row['id'].'">'.$row['topic'].'</a></li>';
+					}
 				}
 		?>
 		</ul>
