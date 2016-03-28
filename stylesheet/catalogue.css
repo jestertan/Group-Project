@@ -5,6 +5,7 @@
     background-size: 100%;
 }
 .wrapper {
+	float:right;
     position: absolute;
     width: 100%;
     top: 0;
