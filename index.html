@@ -1,3 +1,14 @@
+<?php
+	include 'functions.php';
+	require_once('config.php');
+	session_start();
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	$tbl_name="topic"; // Table name
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +65,7 @@
   </nav>
 </div>
 
-<!--<marquee direction="up" scrollamount=50 height="80%" width="80%" loop="0">-->
+<!--<marquee direction="up" scrollamount=50 height="80%" width="80%" loop="0">
      <div>
      <img src="pictures/dota-2-wallpaper.jpg" alt=image1/>
      <img src="pictures/catalog/lol.jpg" alt=image2/>
@@ -75,7 +86,7 @@
      <img src="pictures/catalog/Xcom2.gif" alt=image9/>
      <img src="pictures/catalog/mco.jpg" alt=image10/>
      </div>
-<!--</marquee>-->
+</marquee>-->
 
 
 <!-- Scroll down content -->
