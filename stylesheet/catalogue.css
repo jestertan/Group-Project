@@ -5,6 +5,7 @@
     background-size: 100%;
 }
 .wrapper {
+	float:left;
     position: absolute;
     width: 100%;
     top: 0;
@@ -14,11 +15,10 @@
     padding: 0;
 }
 .inner-wrapper {
-    width: 100%;
     padding: 0;
     display: table;
     clear: both;
-    margin: 0px auto;
+    margin: 0px auto 0px 200px;
 }
 .nav  {
 	width: 300px;
@@ -31,7 +31,6 @@
 }
 .content {
 	width: 100%;
-
     margin: 0 auto;
 }
 .foot {
