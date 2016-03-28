@@ -66,15 +66,13 @@
 		 
 		<div class="form" style=""><p>Form</p>
     <br>
-    <form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+    <form action="forum/forum/add_topic.php" method="post">
 	Name: <br>
-	<input type="text" id="personal_name" onchange="nameValid('personal_name')" name="forumName" style="width: 250px" required><br>
+	<input type="text" id="personal_name" onchange="nameValid('personal_name')" name="topic" style="width: 250px" required><br>
 	<br>
-	Email Address: <br>
-	<input type="text" id="email_address" name="email_address" onchange="emailValid('email_address')" style="width: 360px" required><br><br>
 
 	Comments: <br>
-	<textarea name="contents" rows="8" style="width: 360px">
+	<textarea name="detail" rows="8" style="width: 360px">
 
 	</textarea><br><br>
 	<input type="submit" name="btn1" value="Submit">
