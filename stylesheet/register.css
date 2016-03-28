@@ -1,4 +1,4 @@
-    /*all form input set at 20 characters in html file*/
+﻿    /*all form input set at 20 characters in html file*/
 /*wrapper placeholder*/
 .wrapper{}
 
@@ -25,17 +25,20 @@ header a{
 header a:hover{
   color:gray;
 }*/
+.container{
+padding-top:200px;
+}
 
-/*box margin top to header and flex display*/
-.wrapper .container{
+/*box margin top to header and flex display */
+ .wrapper .container{
   width:50%;
   display:flex;
-  margin-top:200px;
+  margin-top:0
 }
 
 /*center and minimum size second box*/
 body .wrapper .container{
- margin-left:auto;
+  margin-left:auto;
  margin-right:auto;
  min-height:300px;  
 }
