@@ -1,16 +1,28 @@
+﻿
 
+.headerIndex {
+  position:fixed;
+  font-size: larger;
+  height:100%;
+  width:175px;
+  color:white;
+  line-height:100%;
+  padding: 10px;
+  float:left;
+  text-align:left;
+  }
+  
+.headerIndex a{
+  text-decoration:none;
+  color:white;
+  font-family: Arial;
+}  
 
-header {
-    z-index: -2;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    padding: 0pt;
-    margin: 0pt;
-    border: 0pt;
-    background-repeat: no-repeat;
-    
+.headerIndex a:hover{
+  color:gray;
+  font-family: Arial;
 }
+
 
 #smenu-wrapper{
     z-index: -1;
@@ -20,8 +32,7 @@ header {
     width: 20%;
     list-style: none;
     max-height: 100%;
-    background-color: #000000;
-    opacity: 0.5;
+     background-color:rgba(0,0,0, 0.50);
 }
 
 

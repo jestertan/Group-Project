@@ -1,4 +1,4 @@
-
+﻿
 /*all form input set at 20 characters in html file*/
 /*wrapper placeholder*/
 .wrapper{}
@@ -30,16 +30,15 @@ header a:hover{
 }*/
 
 
-/*center and minimum size second box*/
+/*center and minimum size second box   margin-top:170px;*/
 body .wrapper .container{
- min-height:300px;
+min-height:300px;
 width:100%;
-  margin-top:170px;
+margin-top:0
 }
 
-
 /*style policy box inside container*/
-.wrapper .container aside{
+.wrapper  aside{
   color:black;
   background-color:gray;
   text-align:center;
@@ -55,15 +54,25 @@ width:100%;
     width:120px;
     height:120px;
     margin:20px;
-    float:left;
     background-color: #ffffff;
     }
  
     /*set staff div next to policy*/
     .wrapper .container .staffbox{
     float:right;
-    width:65%;
-    
+
    }
-    
-    
+   
+   aside{
+   background-color:gray;
+	}
+	
+	#mainBody{
+	padding-top:0px;
+}
+	
+	.container{
+	margin-left:210px;
+	}
+
+   
