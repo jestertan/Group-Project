@@ -37,4 +37,8 @@ mysql_close();
 <tr>
 <td colspan="5" align="right" bgcolor="#E6E6E6"><a href="add_topic_form.php"><strong>Create New Topic</strong> </a></td>
 </tr>
+<tr>
+<td colspan="5" align="right" bgcolor="#E6E6E6"><a href="../../index.html"><strong>Back to Index</strong> </a></td>
+
+</tr>
 </table>
