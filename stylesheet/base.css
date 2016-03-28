@@ -1,4 +1,4 @@
-/*reset css*/
+﻿/*reset css*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -22,16 +22,23 @@ time, mark, audio, video {
     background-size: 100%;
 }
 
+html{
+  min-width:1000px;
+}
+
 .header{
+  position:fixed;
   font-size: larger;
-  height:100px;
+  height:100%;
   background-color:black;
-  width:100%;
+  opacity: 0.80;
+  width:175px;
   color:white;
-  text-align:center;
+  text-align:left;
   line-height:100%;
-  margin: 0px auto;
   padding: 10px;
+  float:left;
+  margin:0;
   }
 
 .wrapper .container{
@@ -50,6 +57,13 @@ time, mark, audio, video {
 .header a:hover{
   color:gray;
   font-family: Arial;
+}
+
+#mainBody{
+	margin-left:90px;
+	float:left;	
+	width:100%;
+	float:center;
 }
 
 article, aside, details, figcaption, figure, 

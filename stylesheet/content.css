@@ -3,13 +3,21 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
+
 }
 
 body{
-width:100%;
 margin: 0px auto; 
 font-size: 100%;
 font: inherit;
+/*min-width:800px ;
+margin:0 auto;*/
+
+}
+
+.header{
+	float:left;
 }
 
 
@@ -53,24 +61,24 @@ div{
 /*------------------------- */
 
 #title{
-width: 760px;
+width: 740px;
 height:30px;
 background-color:#7f7f7f;
 padding:10px 0px 10px 10px;
-margin:80px 20px 0px 20px;
+margin:20px 20px 0px 20px;
 vertical-align:middle;
 font-size:xx-large;
-margin: 40px auto;
+margin: 20px auto;
 box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
 
 #contents{
-margin-right: 41px; 
 width: 760px;
 background-color:#bfbfbf;
-margin:0px auto;
+margin:20px auto 20px auto;
 padding: 5px;
 box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+float:center;
 }
 
 #main{
