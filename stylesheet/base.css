@@ -141,5 +141,7 @@ td{
 
 fieldset{
     
-    background: #ff00ff;
+    background: #ffffff;
+    border: 1px gray solid;
+    color: #000000;
 }
