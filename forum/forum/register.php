@@ -96,8 +96,10 @@
 	//Check whether the query was successful or not
 	if($result) {
 		header("location: login.php?login=".$login."&password=".$password);
+        
 		exit();
 	}else {
 		die("Query failed");
 	}
 ?>
+

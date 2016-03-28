@@ -7,6 +7,7 @@
 <meta charset="utf-8">
 <title>Register Form</title>
 <link href="css/loginmodule.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 
