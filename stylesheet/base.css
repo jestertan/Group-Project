@@ -132,10 +132,7 @@ td{
 }
 
 .box{
-    color: #ffffff;
+    background-color: #ffffff;
+    font: #000;
 }
 
-fieldset{
-    
-    background: #ff00ff;
-}
