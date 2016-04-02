@@ -136,3 +136,51 @@ td{
     font: #000;
 }
 
+h3  {  
+    font-size: 116.6%;  
+    margin: 10px 10px 5px 10px;  
+    color:#FFF;  
+}  
+.boxgrid    {   
+    width: 380px;   
+    background: #161613;   
+    height: 215px;  
+    margin-bottom: 20px;   
+    border: solid 5px #555;   
+    overflow: hidden;   
+    position: relative;
+	
+}  
+.boxgrid img{   
+    position: absolute;   
+    top: 0;   
+    left: 0;  
+}  
+.boxgrid p{   
+    padding: 0 10px;   
+    color: #afafaf;   
+    font-weight:bold;   
+}  
+      
+.boxcaption{   
+    float: left;   
+    position: absolute;   
+    background: #000;   
+    height: 100px;   
+    width: 100%;   
+    opacity: .8;   
+    /* For IE 5-7 */  
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);  
+    /* For IE 8 */  
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  
+} 
+ 
+.captionfull .boxcaption {  
+    top: 300px;  
+    left: 0;  
+}  
+.caption .boxcaption {  
+    top: 20px;  
+    left: 0;  
+}
+
