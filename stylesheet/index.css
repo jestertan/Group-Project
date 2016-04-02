@@ -25,7 +25,6 @@
 
 
 #smenu-wrapper{
-    z-index: -1;
     position: fixed;
     left: 0;
     height: 100%;
@@ -43,8 +42,7 @@
 
 #content-wrapper{
     float: right;
-    margin-top:80%;
-    width:80%;
+    width:100%;
     height:100%;
     top:100%;
 }
@@ -80,4 +78,40 @@ marquee {
 marquee img {
     width: 48%;
     height: 300px;   
+}
+
+#topNews{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+	width: 790px;
+	display: inline-block;
+}
+
+#firstNews{
+	float: left;
+	
+}
+
+#secondNews{
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#thirdNews{
+	float: right;
+}
+
+.topicTitle{
+	font-size: 18px;
+	font: white;
+	
+}
+
+#secondRow{
+	margin: 0px;
+	padding: 0px;
 }

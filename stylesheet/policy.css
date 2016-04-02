@@ -75,4 +75,24 @@ margin-top:0
 	margin-left:210px;
 	}
 
-   
+
+table{
+    background-color:#808080;
+
+}
+
+td{
+    padding: 5px;
+}
+
+#policy{
+    background-color: #808080;
+    padding: 5px;
+}
+
+#contentTitle{
+    font: #ffffff;
+    background-color: #ff6a00;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
