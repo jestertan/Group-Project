@@ -1,6 +1,15 @@
+html{
+    /*left as comment since it had double slash //*/
+	background-image:  url("../../../pictures/bladeandsoul.jpg");
+    background-color: #808080;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 body {
 	font: 11px Verdana, Arial, Helvetica, sans-serif;
-	color: #666666;
+	color: #ffffff;
 	margin: 0px;
 	padding: 20px 10px 0px;
 }
